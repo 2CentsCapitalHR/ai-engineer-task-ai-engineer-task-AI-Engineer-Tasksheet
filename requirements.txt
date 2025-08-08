@@ -1,0 +1,30 @@
+# Core Framework
+streamlit>=1.48.0
+plotly>=5.18.0
+
+# Document Processing
+python-docx>=1.2.0
+docx>=0.2.4
+
+# AI and Machine Learning
+google-genai>=1.29.0
+anthropic>=0.61.0
+openai>=1.99.3
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+Pillow>=10.0.0
+
+# Development and Testing
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Optional: Enhanced Performance
+uv>=0.1.0
