@@ -3,10 +3,6 @@ import json
 from typing import List, Dict, Any
 from google import genai
 from google.genai import types
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
 
 class RAGSystem:
     """Retrieval-Augmented Generation system for ADGM legal knowledge."""
@@ -15,10 +11,7 @@ class RAGSystem:
         # Note that the newest Gemini model series is "gemini-2.5-flash" or "gemini-2.5-pro"
         # do not change this unless explicitly requested by the user
         self.model = "gemini-2.5-pro"
-        api_key = os.getenv("GEMINI_API_KEY")
-        if not api_key:
-            raise ValueError("GEMINI_API_KEY environment variable is not set")
-        self.client = genai.Client(api_key=api_key)
+        self.client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
         
         # ADGM knowledge base
         self.adgm_knowledge = self._load_adgm_knowledge()
@@ -154,46 +147,13 @@ class RAGSystem:
             )
             
             if response.text:
-                try:
-                    result = json.loads(response.text)
-                except json.JSONDecodeError:
-                    # Fallback if JSON parsing fails
-                    result = {
-                        "document_type": document_type,
-                        "compliance_score": 50,
-                        "issues": [
-                            {
-                                "section": "General",
-                                "issue": "Unable to parse AI response",
-                                "severity": "Medium",
-                                "suggestion": "Please review document manually",
-                                "adgm_reference": "Manual review required"
-                            }
-                        ],
-                        "missing_clauses": [],
-                        "recommendations": ["Manual review recommended due to parsing error"]
-                    }
+                result = json.loads(response.text)
             else:
                 result = {"error": "No content received from AI model"}
             return result
             
         except Exception as e:
-            # Return fallback result instead of raising exception
-            return {
-                "document_type": document_type,
-                "compliance_score": 50,
-                "issues": [
-                    {
-                        "section": "General",
-                        "issue": f"Analysis error: {str(e)}",
-                        "severity": "Medium",
-                        "suggestion": "Please review document manually",
-                        "adgm_reference": "Manual review required"
-                    }
-                ],
-                "missing_clauses": [],
-                "recommendations": ["Manual review recommended due to analysis error"]
-            }
+            raise Exception(f"Error in RAG analysis: {str(e)}")
     
     def _create_analysis_prompt(self, content: str, doc_type: str, knowledge: Dict) -> str:
         """Create analysis prompt with RAG knowledge."""

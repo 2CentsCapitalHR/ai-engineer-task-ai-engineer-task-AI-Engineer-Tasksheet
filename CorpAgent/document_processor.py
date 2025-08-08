@@ -161,8 +161,6 @@ class DocumentProcessor:
             return output.getvalue()
             
         except Exception as e:
-            # Reset file pointer in case of error
-            uploaded_file.seek(0)
             raise Exception(f"Error creating marked document: {str(e)}")
     
     def _add_comment_to_document(self, doc, issue):

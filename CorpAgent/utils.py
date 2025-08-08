@@ -119,16 +119,15 @@ def create_summary_stats(analysis_results: dict) -> dict:
     
     stats = {
         'total_documents': len(documents),
-        'total_issues': sum(doc.get('issues_found', 0) for doc in documents),
-        'high_severity_issues': sum(doc.get('high_severity_issues', 0) for doc in documents),
-        'document_types': list(set(doc.get('document_type', 'Unknown') for doc in documents)),
+        'total_issues': sum(doc['issues_found'] for doc in documents),
+        'high_severity_issues': sum(doc['high_severity_issues'] for doc in documents),
+        'document_types': list(set(doc['document_type'] for doc in documents)),
         'avg_compliance_score': 0
     }
     
     # Calculate average compliance score
     if documents:
-        scores = [doc.get('analysis', {}).get('compliance_score', 0) for doc in documents]
-        if scores:
-            stats['avg_compliance_score'] = sum(scores) / len(scores)
+        scores = [doc['analysis'].get('compliance_score', 0) for doc in documents]
+        stats['avg_compliance_score'] = sum(scores) / len(scores)
     
     return stats
