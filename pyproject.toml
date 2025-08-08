@@ -9,6 +9,7 @@ dependencies = [
     "google-genai>=1.29.0",
     "openai>=1.99.3",
     "python-docx>=1.2.0",
+    "sift-stack-py>=0.8.2",
     "streamlit>=1.48.0",
 ]
 
