@@ -36,17 +36,17 @@ def main():
         
         # API Key input
         api_key = st.text_input(
-            "OpenAI API Key",
+            "Gemini API Key",
             type="password",
-            value=os.getenv("OPENAI_API_KEY", ""),
-            help="Enter your OpenAI API key for document analysis"
+            value=os.getenv("GEMINI_API_KEY", ""),
+            help="Enter your Gemini API key for document analysis"
         )
         
         if api_key:
-            os.environ["OPENAI_API_KEY"] = api_key
+            os.environ["GEMINI_API_KEY"] = api_key
             st.success("✅ API Key configured")
         else:
-            st.warning("⚠️ Please provide an OpenAI API key")
+            st.warning("⚠️ Please provide a Gemini API key")
             
         st.divider()
         

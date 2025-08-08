@@ -1,17 +1,17 @@
 import os
 import json
 from typing import List, Dict, Any
-import openai
-from openai import OpenAI
+from google import genai
+from google.genai import types
 
 class RAGSystem:
     """Retrieval-Augmented Generation system for ADGM legal knowledge."""
     
     def __init__(self):
-        # the newest OpenAI model is "gpt-4o" which was released May 13, 2024.
+        # Note that the newest Gemini model series is "gemini-2.5-flash" or "gemini-2.5-pro"
         # do not change this unless explicitly requested by the user
-        self.model = "gpt-4o"
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        self.model = "gemini-2.5-pro"
+        self.client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
         
         # ADGM knowledge base
         self.adgm_knowledge = self._load_adgm_knowledge()
@@ -133,25 +133,21 @@ class RAGSystem:
         prompt = self._create_analysis_prompt(document_content, document_type, knowledge)
         
         try:
-            response = self.client.chat.completions.create(
+            system_prompt = "You are an expert ADGM legal analyst specializing in corporate compliance and document review. Provide detailed analysis based on ADGM regulations and requirements. Respond with valid JSON only."
+            
+            response = self.client.models.generate_content(
                 model=self.model,
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "You are an expert ADGM legal analyst specializing in corporate compliance and document review. Provide detailed analysis based on ADGM regulations and requirements."
-                    },
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
+                contents=[
+                    types.Content(role="user", parts=[types.Part(text=f"{system_prompt}\n\n{prompt}")])
                 ],
-                response_format={"type": "json_object"},
-                temperature=0.1
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    temperature=0.1
+                )
             )
             
-            content = response.choices[0].message.content
-            if content:
-                result = json.loads(content)
+            if response.text:
+                result = json.loads(response.text)
             else:
                 result = {"error": "No content received from AI model"}
             return result
