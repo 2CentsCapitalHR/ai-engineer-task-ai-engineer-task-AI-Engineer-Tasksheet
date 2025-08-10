@@ -1,0 +1,29 @@
+{
+  "adgm_regulations": [
+    {
+      "content": "ADGM requires all companies to maintain proper corporate governance structures including a board of directors and regular meetings.",
+      "source": "ADGM Companies Regulations 2020",
+      "category": "governance"
+    },
+    {
+      "content": "Annual financial statements must be prepared in accordance with IFRS and filed with ADGM within 6 months of year end.",
+      "source": "ADGM Commercial Licensing Regulations",
+      "category": "financial"
+    },
+    {
+      "content": "All companies must maintain a registered office address within ADGM and notify any changes within 14 days.",
+      "source": "ADGM Registered Office Requirements",
+      "category": "compliance"
+    },
+    {
+      "content": "Directors must act in good faith and in the best interests of the company, avoiding conflicts of interest.",
+      "source": "ADGM Directors Duties Guidelines",
+      "category": "governance"
+    },
+    {
+      "content": "Companies must maintain statutory registers including register of members, directors, and charges.",
+      "source": "ADGM Statutory Registers Requirements",
+      "category": "compliance"
+    }
+  ]
+}

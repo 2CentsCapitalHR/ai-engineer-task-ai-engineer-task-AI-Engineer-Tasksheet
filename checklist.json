@@ -1,0 +1,47 @@
+{
+  "Company Incorporation": {
+    "required_documents": [
+      "Memorandum of Association",
+      "Articles of Association",
+      "Register of Members and Directors",
+      "UBO (Ultimate Beneficial Owner) Form",
+      "Certificate of Incorporation"
+    ],
+    "key_clauses": [
+      "Jurisdiction Clause",
+      "Share Capital Structure",
+      "Director Appointment Process",
+      "Registered Office Address",
+      "Company Objects"
+    ]
+  },
+  "Licensing": {
+    "required_documents": [
+      "License Application Form",
+      "Business Plan",
+      "Financial Projections",
+      "Compliance Manual",
+      "Fit and Proper Forms"
+    ],
+    "key_clauses": [
+      "License Scope",
+      "Regulatory Compliance",
+      "Capital Requirements",
+      "Risk Management"
+    ]
+  },
+  "Employment Contracts": {
+    "required_documents": [
+      "Employment Contract",
+      "Employee Handbook",
+      "Non-Disclosure Agreement",
+      "Visa Documentation"
+    ],
+    "key_clauses": [
+      "Jurisdiction",
+      "Termination Provisions",
+      "Confidentiality",
+      "Non-compete Clauses"
+    ]
+  }
+}
