@@ -1,0 +1,23 @@
+from docx import Document
+from collections import Counter
+
+doc_keywords = {
+    "Articles of Association": ["articles of association"],
+    "Memorandum of Association": ["memorandum of association"],
+    "Employment Contract": ["employment contract"],
+    "Register of Members and Directors": ["register of members", "register of directors"],
+    "UBO Declaration": ["ubo declaration"],
+}
+
+def read_docx(path):
+    doc = Document(path)
+    return [{"index": i, "text": p.text.strip()} for i, p in enumerate(doc.paragraphs) if p.text.strip()]
+
+def detect_document_type(paragraphs):
+    text = "\n".join(p['text'].lower() for p in paragraphs)
+    scores = Counter()
+    for dtype, kws in doc_keywords.items():
+        for kw in kws:
+            if kw in text:
+                scores[dtype] += 1
+    return scores.most_common(1)[0][0] if scores else "Unknown"
