@@ -1,0 +1,24 @@
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+# Data files
+data/vector_store/
+*.faiss
+*.pkl
+
+# Temporary files
+temp/
+*.tmp

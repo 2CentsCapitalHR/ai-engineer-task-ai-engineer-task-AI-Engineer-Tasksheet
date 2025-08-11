@@ -1,0 +1,113 @@
+{
+  "company_incorporation": {
+    "name": "Company Incorporation",
+    "description": "Complete company incorporation process in ADGM",
+    "required_documents": [
+      "articles_of_association",
+      "memorandum_of_association",
+      "incorporation_form",
+      "ubo_declaration",
+      "register_members"
+    ],
+    "optional_documents": [
+      "board_resolution",
+      "shareholder_resolution"
+    ],
+    "process_keywords": [
+      "incorporation",
+      "company formation",
+      "register company",
+      "articles of association",
+      "memorandum of association"
+    ]
+  },
+  "licensing": {
+    "name": "Business Licensing",
+    "description": "Business license application process",
+    "required_documents": [
+      "license_application",
+      "business_plan",
+      "compliance_manual"
+    ],
+    "optional_documents": [
+      "financial_projections",
+      "risk_assessment"
+    ],
+    "process_keywords": [
+      "license",
+      "licensing",
+      "business license",
+      "permit"
+    ]
+  },
+  "employment_setup": {
+    "name": "Employment Setup",
+    "description": "Setting up employment contracts and HR policies",
+    "required_documents": [
+      "employment_contract",
+      "hr_policy",
+      "data_protection_policy"
+    ],
+    "optional_documents": [
+      "employee_handbook",
+      "performance_policy"
+    ],
+    "process_keywords": [
+      "employment",
+      "hr policy",
+      "employment contract",
+      "staff"
+    ]
+  },
+  "branch_registration": {
+    "name": "Branch Registration",
+    "description": "Foreign company branch registration in ADGM",
+    "required_documents": [
+      "branch_application",
+      "parent_company_documents",
+      "board_resolution",
+      "register_members"
+    ],
+    "optional_documents": [
+      "power_of_attorney"
+    ],
+    "process_keywords": [
+      "branch",
+      "foreign company",
+      "branch registration"
+    ]
+  },
+  "change_of_address": {
+    "name": "Change of Registered Address",
+    "description": "Changing company registered address",
+    "required_documents": [
+      "change_address",
+      "board_resolution"
+    ],
+    "optional_documents": [
+      "lease_agreement"
+    ],
+    "process_keywords": [
+      "change address",
+      "registered address",
+      "address change"
+    ]
+  },
+  "annual_filing": {
+    "name": "Annual Filing",
+    "description": "Annual compliance and filing requirements",
+    "required_documents": [
+      "annual_accounts",
+      "annual_return",
+      "register_members"
+    ],
+    "optional_documents": [
+      "auditor_report"
+    ],
+    "process_keywords": [
+      "annual filing",
+      "annual accounts",
+      "compliance filing"
+    ]
+  }
+}
