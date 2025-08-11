@@ -1,0 +1,29 @@
+{
+"process":"Company Incorporation",
+"documents_uploaded" : 4,
+"required_documents" : 5,
+"missing_document" : "Memorandum of Association",
+"issues_found": [
+    {
+      "document" : "ADGM Standard Employment Contract Template - ER 2024 Feb 2025.docx",
+      "section" : "Language",
+      "issue" : "Ambiguous term 'may' used",
+      "severity" : "Medium",
+      "suggestion" : "Use binding/clear language."
+    },
+    {
+      "document" : "Templates_SHReso_AmendmentArticles-v1-20220107 1.docx",
+      "section" : "Execution/Signatory",
+      "issue" : "Missing signature block",
+      "severity" : "High",
+      "suggestion" : "Error generating suggestion."
+    },
+    {
+      "document" : "ADGM Standard Employment Contract - ER 2019 - Short Version May 2024.docx",
+      "section" : "Language",
+      "issue" : "Ambiguous term 'may' used",
+      "severity" : "Medium",
+      "suggestion" : "Use binding/clear language."
+    }
+  ]
+}

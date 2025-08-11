@@ -1,0 +1,41 @@
+{
+  "status": "success",
+  "processed_documents": [
+    {
+      "file_name": "Data_Science_GK.docx",
+      "reviewed_file": "reviewed_20250810_213235_Data_Science_GK.docx",
+      "issues_count": 4,
+      "comments_added": 4,
+      "issues": [
+        {
+          "document": "Data_Science_GK.docx",
+          "section": "Entire Document",
+          "issue": "The document does not contain any clauses or sections related to ADGM regulations or legal compliance. It appears to be a personal resume rather than a legal document.",
+          "severity": "High",
+          "suggestion": "Ensure that the document is relevant to ADGM regulations and contains appropriate legal clauses and sections as per ADGM guidelines."
+        },
+        {
+          "document": "Data_Science_GK.docx",
+          "section": "Jurisdiction",
+          "issue": "The document does not specify any jurisdiction, and there is no mention of ADGM or any legal framework.",
+          "severity": "High",
+          "suggestion": "Include a section specifying the jurisdiction as ADGM if the document is intended for legal purposes within the ADGM framework."
+        },
+        {
+          "document": "Data_Science_GK.docx",
+          "section": "Signatory Section",
+          "issue": "The document lacks a signatory section, which is necessary for legal documents to be binding.",
+          "severity": "Medium",
+          "suggestion": "Add a signatory section with appropriate spaces for signatures and dates to comply with ADGM legal document requirements."
+        },
+        {
+          "document": "Data_Science_GK.docx",
+          "section": "Formatting",
+          "issue": "The document is formatted as a resume, which is not suitable for legal compliance documents.",
+          "severity": "Medium",
+          "suggestion": "Reformat the document to align with ADGM-specific templates for legal documents, ensuring it includes necessary legal sections and clauses."
+        }
+      ]
+    }
+  ]
+}

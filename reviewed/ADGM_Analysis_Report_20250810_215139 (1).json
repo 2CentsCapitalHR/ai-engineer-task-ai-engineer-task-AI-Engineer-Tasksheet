@@ -1,0 +1,48 @@
+{
+  "status": "success",
+  "processed_documents": [
+    {
+      "file_name": "adgm-ra-resolution-multiple-incorporate-shareholders-LTD-incorporation-v2.docx",
+      "reviewed_file": "reviewed_20250810_215139_adgm-ra-resolution-multiple-incorporate-shareholders-LTD-incorporation-v2.docx",
+      "issues_count": 5,
+      "comments_added": 3,
+      "issues": [
+        {
+          "document": "adgm-ra-resolution-multiple-incorporate-shareholders-LTD-incorporation-v2.docx",
+          "section": "Jurisdiction",
+          "issue": "The document correctly references the Abu Dhabi Global Market (ADGM) as the jurisdiction, but it should explicitly state that the incorporation is subject to ADGM laws and regulations.",
+          "severity": "Low",
+          "suggestion": "Ensure that the document explicitly states that the incorporation is subject to ADGM laws and regulations, as per ADGM Companies Regulations."
+        },
+        {
+          "document": "adgm-ra-resolution-multiple-incorporate-shareholders-LTD-incorporation-v2.docx",
+          "section": "Ambiguous Language",
+          "issue": "The phrase 'or any other name approved by ADGM Registration Authority' is ambiguous and non-binding.",
+          "severity": "Medium",
+          "suggestion": "Specify that the company name must be approved by the ADGM Registration Authority, in accordance with ADGM Companies Regulations."
+        },
+        {
+          "document": "adgm-ra-resolution-multiple-incorporate-shareholders-LTD-incorporation-v2.docx",
+          "section": "Missing Signatory Section",
+          "issue": "The document lacks a designated section for the signatures of the incorporating shareholders.",
+          "severity": "High",
+          "suggestion": "Include a section for the signatures of the incorporating shareholders, as required by ADGM Companies Regulations for valid execution of resolutions."
+        },
+        {
+          "document": "adgm-ra-resolution-multiple-incorporate-shareholders-LTD-incorporation-v2.docx",
+          "section": "Non-compliance with ADGM Templates",
+          "issue": "The document does not explicitly state compliance with ADGM's model articles or templates.",
+          "severity": "Medium",
+          "suggestion": "Ensure the document states compliance with ADGM's model articles or templates, as per ADGM Companies Regulations."
+        },
+        {
+          "document": "adgm-ra-resolution-multiple-incorporate-shareholders-LTD-incorporation-v2.docx",
+          "section": "Appointment of Signatory for Incorporation Purposes",
+          "issue": "The section uses the placeholder '{insert authorised persons name(s)}' which should be replaced with actual names.",
+          "severity": "High",
+          "suggestion": "Replace placeholders with actual names of authorized persons, as required by ADGM Companies Regulations for clarity and enforceability."
+        }
+      ]
+    }
+  ]
+}
