@@ -1,0 +1,118 @@
+[
+    {
+        "process": "Company Formation & Governance",
+        "documents_uploaded": 2,
+        "required_documents": 5,
+        "missing_document": [
+            "Articles of Association",
+            "Memorandum of Association",
+            "Board Resolution",
+            "UBO Declaration",
+            "Register of Members and Directors"
+        ],
+        "issues_found": [
+            {
+                "document": "company_incorporation.docx",
+                "clause": "Certificate of Incorporation",
+                "result": {
+                    "raw_output": "```json\n{\n    \"issue\": \"The provided clause 'Certificate of Incorporation' is incomplete and lacks necessary details as required by ADGM rules.\",\n    \"severity\": \"High\",\n    \"suggestion\": \"Include all necessary information such as company name, registration number, date of incorporation, authorized share capital, and other required details as per ADGM's Companies Regulations 2020.\",\n    \"citation\": \"ADGM Companies Regulations 2020\"\n}\n```"
+                }
+            },
+            {
+                "document": "company_incorporation.docx",
+                "clause": "This certifies that XYZ Holdings Ltd. has been inc...",
+                "result": {
+                    "raw_output": "```json\n{\n    \"issue\": \"The certificate does not include the required statement that the company is registered in the Abu Dhabi Global Market (ADGM) and the company's registration number.\",\n    \"severity\": \"High\",\n    \"suggestion\": \"The certificate should be amended to include the required statement, for example: 'This certifies that XYZ Holdings Ltd. has been incorporated in the Abu Dhabi Global Market (ADGM) with registration number [insert registration number] under the ADGM Companies Regulations 2020.'\",\n    \"citation\": \"ADGM Companies Regulations 2020, Regulation 10(1)(a) which states that a company must have its name and registration number on its certificate of incorporation\"\n}\n```"
+                }
+            },
+            {
+                "document": "company_incorporation.docx",
+                "clause": "Date of Incorporation: 15 March 2023",
+                "result": {
+                    "raw_output": "Given the provided clause and the ADGM sources, it seems there's no direct issue with the clause \"Date of Incorporation: 15 March 2023\" in terms of compliance with the information provided from ADGM. The clause appears to be a straightforward statement of fact regarding the incorporation date of an entity. However, without specific regulations or templates provided in the ADGM sources for comparison, it's challenging to definitively state its compliance.\n\nSince the ADGM sources provided do not contain specific legal requirements or templates that the clause \"Date of Incorporation: 15 March 2023\" could be directly compared against, and considering that the clause itself does not inherently suggest any violation of transparency, efficiency, or integrity principles that ADGM promotes, it might seem compliant at face value.\n\nBut, considering the necessity of strict compliance and the potential for oversights, a cautious approach is advisable:\n\n```json\n{\n    \"issue\": \"Lack of specific regulatory reference\",\n    \"severity\": \"Low\",\n    \"suggestion\": \"Verify against the most current ADGM Companies Regulations or consult with ADGM authorities to ensure the date format and disclosure meet all regulatory requirements.\",\n    \"citation\": \"ADGM Companies Regulations 2020, Section on Company Registration\"\n}\n```\n\nPlease note, the suggestion and citation are based on a general understanding of regulatory compliance and may not directly apply without access to the specific ADGM regulations or legal frameworks that pertain to the disclosure of incorporation dates. Always consult the most current and relevant ADGM legal frameworks or regulations for precise guidance."
+                }
+            },
+            {
+                "document": "company_incorporation.docx",
+                "clause": "Registered Office: Suite 204, ADGM Square, Abu Dha...",
+                "result": {
+                    "raw_output": "Given the provided clause and the relevant ADGM sources, it appears there's an issue with accessing specific rules or templates directly, as the \"Rulebook\" page returns a \"Page not found\" error. However, based on general knowledge of legal compliance within free zones like ADGM, a registered office address is typically required to be a physical address within the free zone. The given clause seems to comply with this requirement by specifying a suite number within ADGM Square, Abu Dhabi, which is presumably within the ADGM free zone. \n\nWithout specific ADGM rules or templates to reference due to the \"Page not found\" error, we can make a general assessment:\n\n```json\n{\n    \"issue\": \"Insufficient information due to inaccessible ADGM Rulebook\",\n    \"severity\": \"Low\",\n    \"suggestion\": \"Verify the suite number and ADGM Square address for completeness and ensure it aligns with any available ADGM guidelines or consult with ADGM authorities for confirmation\",\n    \"citation\": \"Federal Decree No. (15) of 2013 Establishment of Financial Free Zone in the Emirate of Abu Dhabi, as referenced on the ADGM website\"\n}\n```"
+                }
+            },
+            {
+                "document": "company_incorporation.docx",
+                "clause": "Issued by: Registration Authority",
+                "result": {
+                    "raw_output": "```\n{\n    \"issue\": \"The clause does not specify the full name of the Registration Authority, which may lead to ambiguity and non-compliance with ADGM's transparency requirements.\",\n    \"severity\": \"Medium\",\n    \"suggestion\": \"The clause should be revised to include the full name of the Registration Authority, e.g., 'Issued by: Abu Dhabi Global Market Registration Authority'\",\n    \"citation\": \"ADGM Companies Regulations 2020, Section 12: 'A company must provide its registered name and registration number on all its business letters, statements of account, invoices, and other documents'\"\n}\n```"
+                }
+            },
+            {
+                "document": "shareholder_resolution.docx",
+                "clause": "Special Resolution of Shareholders",
+                "result": {
+                    "raw_output": "```json\n{\n    \"issue\": \"Lack of definition or explanation for 'Special Resolution of Shareholders'\",\n    \"severity\": \"Medium\",\n    \"suggestion\": \"Provide a clear definition or explanation of what 'Special Resolution of Shareholders' entails, including the requirements and procedures for passing such a resolution, as per ADGM's Companies Regulations 2020\",\n    \"citation\": \"ADGM Companies Regulations 2020\"\n}\n```"
+                }
+            },
+            {
+                "document": "shareholder_resolution.docx",
+                "clause": "We, the undersigned shareholders of ABC Trading Lt...",
+                "result": {
+                    "raw_output": "```\n{\n    \"issue\": \"Lack of specificity regarding the changes to the Articles of Association\",\n    \"severity\": \"Medium\",\n    \"suggestion\": \"The resolution should explicitly state the specific amendments to be made to the Articles of Association, including the details of the new director's appointment.\",\n    \"citation\": \"ADGM Companies Regulations 2015, Regulation 17 (Alteration of Articles)\"\n}\n```"
+                }
+            },
+            {
+                "document": "shareholder_resolution.docx",
+                "clause": "Date: 12 January 2024",
+                "result": {
+                    "raw_output": "```json\n{\n    \"issue\": \"The provided clause does not contain any obvious non-compliance with ADGM rules as it is only a date.\",\n    \"severity\": \"Low\",\n    \"suggestion\": \"No changes are necessary for this clause as it does not appear to be related to any specific ADGM rule or regulation. However, ensure that the date format is consistent throughout the document.\",\n    \"citation\": \"No specific ADGM law, rule, or template applies to this clause.\"\n}\n```"
+                }
+            },
+            {
+                "document": "shareholder_resolution.docx",
+                "clause": "Signed:",
+                "result": {
+                    "raw_output": "```json\n{\n    \"issue\": \"The clause does not contain any signature or date, which is a required element for a valid signature block in ADGM.\",\n    \"severity\": \"High\",\n    \"suggestion\": \"The clause should be revised to include the signature of the authorized person, date, and their title or position, e.g., \\\"Signed by [Name] on [Date] in the capacity of [Title/Position]\\\".\",\n    \"citation\": \"ADGM Companies Regulations 2015, Article 11\"\n}\n```"
+                }
+            },
+            {
+                "document": "shareholder_resolution.docx",
+                "clause": "[Shareholder Name]",
+                "result": {
+                    "raw_output": "```json\n{\n    \"issue\": \"Clause is empty and does not contain any meaningful content\",\n    \"severity\": \"High\",\n    \"suggestion\": \"Replace the clause with a clear and descriptive statement that adheres to ADGM rules and regulations, such as providing the actual shareholder's name or including a provision that outlines the rights and obligations of shareholders\",\n    \"citation\": \"ADGM Companies Regulations 2015, Section 12: 'A company must have a registered office in the Abu Dhabi Global Market.' and FSRA Rulebook, Section 3.3: 'Authorised Persons must have adequate systems and controls in place to ensure compliance with ADGM rules and regulations.'\"\n}\n```"
+                }
+            }
+        ]
+    },
+    {
+        "process": "Data Protection",
+        "documents_uploaded": 1,
+        "required_documents": 2,
+        "missing_document": [
+            "Appropriate Policy Document",
+            "Data Protection Policy"
+        ],
+        "issues_found": [
+            {
+                "document": "privacy_policy.docx",
+                "clause": "Privacy Policy",
+                "result": {
+                    "raw_output": "```json\n{\n    \"issue\": \"The provided clause appears to be a cookies policy rather than a comprehensive privacy policy, and it lacks essential information required by ADGM rules such as data subject rights, data retention, and security measures.\",\n    \"severity\": \"High\",\n    \"suggestion\": \"Develop a detailed privacy policy that includes information on data collection, processing, storage, security, and subject rights, as well as a clear and separate cookies policy. Ensure the privacy policy is easily accessible and provides a clear method for users to opt-out or withdraw consent.\",\n    \"citation\": \"ADGM Data Protection Regulations 2020\"\n}\n```"
+                }
+            },
+            {
+                "document": "privacy_policy.docx",
+                "clause": "ABC Trading Ltd. complies with ADGM Data Protectio...",
+                "result": {
+                    "raw_output": "```json\n{\n    \"issue\": \"The clause does not specifically reference the applicable ADGM data protection regulation, which may lead to confusion or ambiguity.\",\n    \"severity\": \"Medium\",\n    \"suggestion\": \"Update the clause to reference the latest applicable ADGM data protection regulation, such as 'ADGM Data Protection Regulations 2021, as amended from time to time'.\",\n    \"citation\": \"Federal Decree No. 45 of 2021 regarding the Protection of Personal Data\"\n}\n```"
+                }
+            },
+            {
+                "document": "privacy_policy.docx",
+                "clause": "We are committed to safeguarding personal data and...",
+                "result": {
+                    "raw_output": "```\n{\n    \"issue\": \"The clause does not specifically mention compliance with ADGM data protection regulations\",\n    \"severity\": \"Medium\",\n    \"suggestion\": \"The clause should be revised to explicitly state compliance with ADGM data protection regulations, such as the Data Protection Regulations 2020\",\n    \"citation\": \"ADGM Data Protection Regulations 2020\"\n}\n```"
+                }
+            }
+        ]
+    }
+]

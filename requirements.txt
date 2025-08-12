@@ -1,0 +1,35 @@
+# Core LangChain libraries
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+
+# Embeddings via Hugging Face API
+sentence-transformers
+huggingface-hub
+
+# PDF processing
+PyPDF2
+pdfplumber
+
+# DOC/DOCX processing
+python-docx
+
+# HTML processing
+beautifulsoup4
+requests
+
+# Vector store
+faiss-cpu
+
+# Env management
+python-dotenv
+
+# Frontend (optional for UI)
+streamlit
+
+# Qwen LLM client (ChatGroq / OpenAI style API)
+openai
+
+# Extra utilities
+tqdm
