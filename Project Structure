@@ -1,0 +1,29 @@
+adgm-corporate-agent/
+├── 📂 .venv/                   # Python virtual environment
+├── 📂 adgm_refs/               # Reference documents for the RAG system
+│   ├── ... (e.g., jurisdiction.txt)
+├── 📂 data/                    # For generated files and persistent data
+│   ├── 📂 outputs/              # Reviewed files and JSON reports
+│   └── 📂 chroma_db/            # Persistent ChromaDB for RAG index
+├── 📂 scripts/                 # Utility scripts for development
+│   └── download_sources.py     # Script to download official ADGM documents
+├── 📂 tests/                   # Unit tests for core functions
+│   └── test_analysis.py
+├── 📄 app.py                   # The main Gradio application script
+├── 📄 requirements.txt         # List of Python dependencies
+├── 📄 README.md                # The main documentation file
+└── 📄 .env.example             # A template for environment variablesadgm-corporate-agent/
+├── 📂 .venv/                   # Python virtual environment
+├── 📂 adgm_refs/               # Reference documents for the RAG system
+│   ├── ... (e.g., jurisdiction.txt)
+├── 📂 data/                    # For generated files and persistent data
+│   ├── 📂 outputs/              # Reviewed files and JSON reports
+│   └── 📂 chroma_db/            # Persistent ChromaDB for RAG index
+├── 📂 scripts/                 # Utility scripts for development
+│   └── download_sources.py     # Script to download official ADGM documents
+├── 📂 tests/                   # Unit tests for core functions
+│   └── test_analysis.py
+├── 📄 app.py                   # The main Gradio application script
+├── 📄 requirements.txt         # List of Python dependencies
+├── 📄 README.md                # The main documentation file
+└── 📄 .env.example             # A template for environment variables

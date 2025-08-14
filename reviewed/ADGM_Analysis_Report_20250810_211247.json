@@ -1,0 +1,84 @@
+{
+  "status": "success",
+  "processed_documents": [
+    {
+      "file_name": "reviewed_Resume_GK.docx",
+      "reviewed_file": "reviewed_20250810_211247_reviewed_Resume_GK.docx",
+      "issues_count": 5,
+      "comments_added": 5,
+      "issues": [
+        {
+          "document": "reviewed_Resume_GK.docx",
+          "section": "Entire Document",
+          "issue": "The document is a personal resume and does not contain any clauses or sections relevant to ADGM regulations.",
+          "severity": "High",
+          "suggestion": "Ensure that the document is relevant to ADGM regulations and contains applicable clauses or sections as per ADGM guidelines."
+        },
+        {
+          "document": "reviewed_Resume_GK.docx",
+          "section": "Jurisdiction",
+          "issue": "The document does not specify any jurisdiction, and it is not related to ADGM or UAE legal matters.",
+          "severity": "High",
+          "suggestion": "Include relevant jurisdictional information if the document is intended to be used within the ADGM legal framework."
+        },
+        {
+          "document": "reviewed_Resume_GK.docx",
+          "section": "Language and Binding",
+          "issue": "The document uses non-binding language as it is a resume and not a legal document.",
+          "severity": "Medium",
+          "suggestion": "Ensure that any legal document intended for ADGM use includes binding language as per ADGM regulations."
+        },
+        {
+          "document": "reviewed_Resume_GK.docx",
+          "section": "Signatory Section",
+          "issue": "The document lacks a signatory section, which is necessary for legal documents.",
+          "severity": "Medium",
+          "suggestion": "Include a signatory section if the document is intended to be a legal agreement or contract under ADGM regulations."
+        },
+        {
+          "document": "reviewed_Resume_GK.docx",
+          "section": "Formatting",
+          "issue": "The document is formatted as a resume, not as a legal document or contract.",
+          "severity": "Low",
+          "suggestion": "Reformat the document to comply with ADGM-specific templates if it is intended for legal use."
+        }
+      ]
+    },
+    {
+      "file_name": "Data_Science_GK.docx",
+      "reviewed_file": "reviewed_20250810_211247_Data_Science_GK.docx",
+      "issues_count": 4,
+      "comments_added": 4,
+      "issues": [
+        {
+          "document": "Data_Science_GK.docx",
+          "section": "Entire Document",
+          "issue": "The document does not contain any clauses, sections, or references to ADGM regulations. It appears to be a personal resume rather than a legal or regulatory document.",
+          "severity": "High",
+          "suggestion": "Ensure the document is relevant to ADGM regulations and includes necessary legal clauses and references as per ADGM guidelines."
+        },
+        {
+          "document": "Data_Science_GK.docx",
+          "section": "Jurisdiction",
+          "issue": "The document does not specify any jurisdiction, and there is no mention of ADGM or any legal framework applicable to ADGM.",
+          "severity": "High",
+          "suggestion": "Include a section specifying the jurisdiction as ADGM and ensure compliance with ADGM-specific legal frameworks."
+        },
+        {
+          "document": "Data_Science_GK.docx",
+          "section": "Signatory Section",
+          "issue": "The document lacks a signatory section, which is essential for legal documents to be binding.",
+          "severity": "Medium",
+          "suggestion": "Add a signatory section with appropriate signatories as per ADGM requirements to ensure the document is legally binding."
+        },
+        {
+          "document": "Data_Science_GK.docx",
+          "section": "Formatting",
+          "issue": "The document is formatted as a resume, which is not suitable for legal or regulatory compliance documents.",
+          "severity": "Medium",
+          "suggestion": "Reformat the document to align with ADGM-specific templates and guidelines for legal documents."
+        }
+      ]
+    }
+  ]
+}

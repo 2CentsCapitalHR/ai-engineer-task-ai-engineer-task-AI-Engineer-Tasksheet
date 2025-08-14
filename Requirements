@@ -1,0 +1,10 @@
+langchain
+langchain-openai
+langchain-community
+faiss-cpu
+pypdf
+unstructured
+python-docx
+gradio
+python-dotenv
+pydantic
